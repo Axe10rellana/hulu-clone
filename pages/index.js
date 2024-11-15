@@ -21,9 +21,7 @@ export async function getServerSideProps(context) {
 
   try {
     const response = await fetch(
-      `https://api.themoviedb.org/3${
-        requests[genre]?.url || requests.fetchTrending.url
-      }`
+      `https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending.url}`
     );
 
     const data = await response.json();

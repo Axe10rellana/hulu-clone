@@ -5,10 +5,10 @@
   "version": "1.0.0",
   "homepage": "./",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+	  "dev": "next dev",
+	  "build": "next build && next export",
+	  "start": "next start",
+	  "lint": "next lint"
   },
   "keywords": [
     "next",
